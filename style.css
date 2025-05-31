@@ -1,0 +1,153 @@
+/* Intel Brand Colors */
+:root {
+  --intel-blue: #0071c5;
+  --intel-light-blue: #00a6e0;
+  --intel-dark: #002147;
+  --intel-white: #f4f8fb;
+  --card-bg: #ffffffcc;
+  --card-shadow: 0 4px 24px rgba(0, 113, 197, 0.12);
+}
+
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: 'Inter', 'Roboto', Arial, sans-serif;
+  background: linear-gradient(135deg, var(--intel-blue), var(--intel-light-blue));
+  color: var(--intel-dark);
+  min-height: 100vh;
+}
+
+/* Header Section */
+header {
+  background: linear-gradient(90deg, #eaf6fb 60%, #b3e0fa 100%);
+  color: #002147;
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+header img {
+  width: 140px;
+  margin-bottom: 1rem;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+header p {
+  font-size: 1.25rem;
+  color: #0071c5;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Timeline Section */
+section {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+}
+section > div {
+  flex: 0 0 320px;
+  background: var(--card-bg);
+  border-radius: 1.25rem;
+  box-shadow: var(--card-shadow);
+  padding: 1.5rem 1rem 1rem 1rem;
+  position: relative;
+  transition: transform 0.3s cubic-bezier(.22,.61,.36,1), box-shadow 0.3s;
+  scroll-snap-align: start;
+  cursor: pointer;
+  min-width: 280px;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section > div:hover {
+  transform: translateY(-12px) scale(1.04) rotate(-1deg);
+  box-shadow: 0 8px 32px rgba(0, 166, 224, 0.18);
+  z-index: 2;
+}
+section h2 {
+  color: var(--intel-blue);
+  margin: 0 0 0.25rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+section h3 {
+  color: var(--intel-dark);
+  margin: 0 0 0.75rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+section img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 12px #0071c522;
+  background: #eaf6fb;
+  object-fit: cover;
+  aspect-ratio: 2.5/1;
+}
+section p {
+  font-size: 1rem;
+  color: #222;
+  color: #222;
+  margin: 0;
+  transition: color 0.2s;
+}
+
+/* Card Hover Reveal */
+section > div::after {
+  content: attr(data-details);
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  background: rgba(0,113,197,0.95);
+  color: #fff;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 16px #0071c555;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 10;
+}
+section > div:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive: Stack timeline vertically on small screens */
+@media (max-width: 900px) {
+  section {
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow-x: visible;
+    scroll-snap-type: none;
+    padding: 1.5rem 0.5rem;
+  }
+  section > div {
+    max-width: 98vw;
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+/* Hide scroll bar for a cleaner look */
+section::-webkit-scrollbar {
+  height: 8px;
+  background: #eaf6fb;
+}
+section::-webkit-scrollbar-thumb {
+  background: var(--intel-blue);
+  border-radius: 4px;
+}

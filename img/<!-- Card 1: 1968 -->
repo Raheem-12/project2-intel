@@ -1,0 +1,62 @@
+<!-- Card 1: 1968 -->
+<img 
+  src="img/1968_intel.png" 
+  alt="Intel Founders" 
+  style="width: 100%; max-width: 180px; height: 60px; object-fit: cover; object-position: center 35%; border-radius: 0.75rem; margin-bottom: 1rem;" 
+/>
+
+<!-- Card 2: 1971 -->
+<img 
+  src="img/4004-ai.jpg" 
+  alt="Intel 4004 Microprocessor" 
+  style="width: 100%; max-width: 180px; height: 60px; object-fit: cover; object-position: center 50%; border-radius: 0.75rem; margin-bottom: 1rem;" 
+/>
+
+<!-- Card 3: 1978 -->
+<img 
+  src="img/8086-ai.jpg" 
+  alt="Intel 8086 Processor" 
+  style="width: 100%; max-width: 180px; height: 60px; object-fit: cover; object-position: center 50%; border-radius: 0.75rem; margin-bottom: 1rem;" 
+/>
+
+<!-- Card 4: 1985 -->
+<img 
+  src="img/386-ai.jpg" 
+  alt="Intel 386 Processor" 
+  style="width: 100%; max-width: 180px; height: 60px; object-fit: cover; object-position: center 50%; border-radius: 0.75rem; margin-bottom: 1rem;" 
+/>
+
+<!-- Card 5: 2006 -->
+<img 
+  src="img/ghg-ai.jpg" 
+  alt="Intel GHG Emissions" 
+  style="width: 100%; max-width: 180px; height: 60px; object-fit: cover; object-position: center 50%; border-radius: 0.75rem; margin-bottom: 1rem;" 
+/>
+
+<!-- Card 6: 2020 -->
+<img 
+  src="img/rise-ai.jpg" 
+  alt="Intel RISE Strategy" 
+  style="width: 100%; max-width: 180px; height: 60px; object-fit: cover; object-position: center 50%; border-radius: 0.75rem; margin-bottom: 1rem;" 
+/>
+
+<!-- Card 7: 2022 -->
+<img 
+  src="img/netzero-ai.jpg" 
+  alt="Intel Net Zero" 
+  style="width: 100%; max-width: 180px; height: 60px; object-fit: cover; object-position: center 50%; border-radius: 0.75rem; margin-bottom: 1rem;" 
+/>
+
+<!-- Card 8: 2023 -->
+<img 
+  src="img/renewable-ai.jpg" 
+  alt="Intel Renewable Electricity" 
+  style="width: 100%; max-width: 180px; height: 60px; object-fit: cover; object-position: center 50%; border-radius: 0.75rem; margin-bottom: 1rem;" 
+/>
+
+<!-- Card 9: 2024 -->
+<img 
+  src="img/summit-ai.jpg" 
+  alt="Intel Sustainability Summit" 
+  style="width: 100%; max-width: 180px; height: 60px; object-fit: cover; object-position: center 50%; border-radius: 0.75rem; margin-bottom: 1rem;" 
+/>
